@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kids_athletics"
+version = "0.1.0"
+description = "Kids Athletics motion game"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [ { name = "shibajob" } ]
+dependencies = [
+  "opencv-python",
+  "numpy",
+  "mediapipe",
+]
+
+[project.scripts]
+kids-athletics = "kids_athletics.top:main"
